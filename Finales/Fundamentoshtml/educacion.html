@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hoja de Vida</title>
+  </head>
+  <body>
+    <header>
+      <svg width="100px" height="100px" viewBox="0 0 100 100">
+        <image xlink:href="images/icono.svg" width="100px" height="100px"></image>
+      </svg>
+      
+      <h1>Hoja de Vida</h1>
+      <h2>Fabio Andr&eacute;s Garc&iacute;a L&oacute;pez</h2>
+      <h3>Fecha Nacimiento 11/06/1979 Armenia Quind&iacute;o (Colombia)</h3>
+      <nav>
+        <a href="index.html">Inicial</a><br/>
+        <a href="educacion.html">Educaci&oacute;n</a><br/>
+        <a href="experiencia.html">Experiencia</a><br/>
+      </nav>
+    </header>
+
+    <h3>Educaci&oacute;n</h3>
+    <table border="1", cellpadding="0", cellspacing="0">
+      <tr>
+        <th>Año</th>
+        <th>Instituci&oacute;n</th>
+        <th>Lugar</th>
+        <th>¿Culminó?</th>
+      </tr>
+      <tr>
+        <td>1997</td>
+        <td>Rufino J. Cuervo</td>
+        <td>Armenia</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2003</td>
+        <td>Universidad del Quindio</td>
+        <td>Armenia</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2015</td>
+        <td>Universidad Externado de Colombia</td>
+        <td>Bogot&aacute;</td>
+        <td>Si</td>
+      </tr>
+    </table>
+
+    <p>
+
+    <form class="" action="index.html" method="post">
+      <legend><strong>Agregar Estudios</strong> </legend>
+
+      <p>
+        <label for="anio">Año</label>
+      </p>
+      <p>
+        <select name="anio">
+				      <option value="1">2017</option>
+				      <option value="1">2016</option>
+				      <option value="1">2015</option>
+			  </select>
+      </p>
+
+      <p>
+        <label for="institucion">Instituci&oacute;n</label>
+      </p>
+      <p>
+        <input type="text" name="institucion" required>
+      </p>
+
+      <p>
+        <label for="lugar">Lugar</label>
+      </p>
+      <p>
+        <textarea name="lugar" id="" cols="30" rows="3"></textarea>
+      </p>
+
+      <p>
+        <label for="culmino">¿Culmino?</label>
+      </p>
+      <p>
+        <input type="radio" name="culmino"> Si
+        <input type="radio" name="culmino"> No
+      </p>
+
+      <p>
+        <input type="submit" value="Registrar">
+      </p>
+
+    </form>
+    </p>
+
+
+
+    <footer>
+      <ul>
+        <li><strong>Email:</strong>fabio_andres_g@hotmail.com</li>
+        <li><strong>Tel&eacute;fono:</strong>304 6456299</li>
+        <li><strong>Direcci&oacute;n:</strong>Envigado - Antioquia Calle 27D Sur 27B 101</li>
+      </ul>
+    </footer>
+
+  </body>
+</html>
