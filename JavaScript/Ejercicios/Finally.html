@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>usando finally</title>
+  </head>
+  <body>
+    <h1>Menajando errores con Finally</h1>
+    <button onclick="Mifuncion1()">Boton1</button>
+    <button onclick="Mifuncion2()">Boton2</button>
+    <p id="Mensaje"></p>
+
+  </body>
+
+  <script>
+
+    function Mifuncion1(){
+      try {
+        var mensaje = "algo";
+        if (isNaN(parseInt(mensaje))){
+          throw "El parametro enviado a parseInt no es un numero";
+        }
+      } catch (error) {
+        alert("Error: "+error);
+    } finally{
+      document.getElementById("Mensaje").innerHTML = "Contnuamos con el codigo";
+    }
+
+  }
+
+    function Mifuncion2(){
+      try {
+        var res = 45/0;
+        if (res==Infinity){
+          throw "division entre cero no es valida";
+        }
+      } catch (error) {
+        alert("Error: "+error);
+    }
+  }
+
+  </script>
+</html>

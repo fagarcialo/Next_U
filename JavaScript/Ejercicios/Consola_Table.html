@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Consola Table</title>
+  </head>
+  <body>
+    <h1>Usando el log de consula bidimensional, presione F12 y vaya a la pestaña console para ver los resultados</h1>
+
+  </body>
+
+  <script>
+    var notas = [
+      [4.5,5.0,3.5],
+      [3.2,4.0,3.5],
+      [2.3,5.0,2.5]
+    ];
+    var productos = [
+      {codigo: "001",
+      nombre:"camisa",
+      precio:"5000"},
+      {codigo: "002",
+      nombre:"pantalon",
+      precio:"12000"},
+  ];
+
+    console.table(notas);
+    console.table(productos);
+
+  </script>
+</html>

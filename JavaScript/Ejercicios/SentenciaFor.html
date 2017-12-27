@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Sentencia For</h1>
+    <p id="salida"></p>
+    <button type="button" name="button" onclick="mostrar_equipos()">Equipos de Futbol</button>
+
+  </body>
+  <script>
+
+    function mostrar_equipos(){
+      var texto = "Equipos: <br>";
+      var equipos = ["barcelona", "madrid", "nacional", "bayer"];
+
+      for(var i=0; i<equipos.length; i++)
+      {
+        texto += equipos[i]+"<br>";
+      }
+      document.getElementById("salida").innerHTML = texto;
+    }
+
+
+  </script>
+</html>

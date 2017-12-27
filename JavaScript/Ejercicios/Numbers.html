@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Numeros</title>
+  </head>
+  <body>
+    <h1>Number</h1>
+      <p id="n1"></p>
+      <p id="n2"></p>
+    <h1>Number Propiedades</h1>
+      <p id="n3"></p>
+      <p id="n4"></p>
+      <p id="n5"></p>
+      <p id="n6"></p>
+      <p id="n7"></p>
+      <p id="n8"></p>
+      <p id="n9"></p>
+    <h1>Number Metodos</h1>
+      <p id="n10"></p>
+      <p id="n11"></p>
+      <p id="n12"></p>
+      <p id="n13"></p>
+      <p id="n14"></p>
+      <p id="n15"></p>
+      <p id="n16"></p>
+  </body>
+
+  <script>
+    var num1 =2500;
+    var num2 = 3.5;
+
+    document.getElementById("n1").innerHTML = num1;
+    document.getElementById("n2").innerHTML = num2;
+
+    //propiedades Number
+    var num3 = 252444;
+    document.getElementById("n3").innerHTML = num3.constructor;
+    document.getElementById("n4").innerHTML = Number.MAX_VALUE;
+    document.getElementById("n5").innerHTML = Number.MIN_VALUE
+    document.getElementById("n6").innerHTML = Number.NEGATIVE_INFINITY;
+    document.getElementById("n7").innerHTML = Number.POSITIVE_INFINITY;
+    document.getElementById("n8").innerHTML = Number.NaN;
+
+    Number.prototype.metodo_duplicar = function() {
+      return this*2;
+    }
+
+    var num4 = 100;
+    document.getElementById("n9").innerHTML = "Duplicado "+num4.metodo_duplicar();
+
+    var num5 = 5;
+    document.getElementById("n10").innerHTML = num5.toExponential();
+
+    var num6 = 100.454545;
+    document.getElementById("n11").innerHTML = num6.toFixed(3);//recorta decimales
+
+    var num7 = 19.17999;
+    document.getElementById("n12").innerHTML = num7.toPrecision(2);
+
+    var num8 = 3.1416;
+    document.getElementById("n13").innerHTML = num8.toString();
+
+    var num9 = 5000;
+    document.getElementById("n14").innerHTML = num9.valueOf();
+
+    document.getElementById("n15").innerHTML = parseInt("2.65 hola mundo");//Solo toma la parte entera
+    document.getElementById("n16").innerHTML = parseFloat("2.1416 solo toma el numero siempre y cuando este al principio");//Solo toma la parte entera
+
+  </script>
+</html>

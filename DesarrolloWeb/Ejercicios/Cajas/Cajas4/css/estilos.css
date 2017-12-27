@@ -1,0 +1,83 @@
+body {
+	margin: 20px;
+}
+
+h1{
+	font-family: 'Spectral SC', serif;
+}
+
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+}
+
+#destacados {
+	background-color: #669999;
+}
+
+#ofertas {
+	background-color: #F7D988;
+}
+
+#disponible {
+	background-color: #F7A188;
+}
+
+#contenido > section > h1 {
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	margin-top: 10px;
+	border-top: solid 1px black;
+	padding-top: 10px;
+	clear: both;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+#destacados h1 {
+	text-shadow: 0 0 3px white;
+}
+
+#destacados .contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background-color: white;
+	width: 50%;
+	box-shadow: 4px 8px;
+}
+
+#ofertas .contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background-color: white;
+	width: 33.3%;
+	box-shadow: 4px 8px;
+}
+
+#ofertas h1 {
+	text-shadow: 1px 1px 2px white, 0 0 30px #D46A6A;
+}
+
+
+#disponible .contenedor > div {
+	text-align: center;
+	padding: 10px;
+	background-color: white;
+	width: 24%;
+	margin: 10px;
+	box-shadow: 4px 8px #D46A6A;
+}

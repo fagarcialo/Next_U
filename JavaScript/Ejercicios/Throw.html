@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>usando try catch</title>
+  </head>
+  <body>
+    <h1>Menajando errores con throw</h1>
+    <button onclick="Mifuncion1()">Boton1</button>
+    <button onclick="Mifuncion2()">Boton2</button>
+
+  </body>
+
+  <script>
+
+    function Mifuncion1(){
+      try {
+        var mensaje = "algo";
+        if (isNaN(parseInt(mensaje))){
+          throw "El parametro enviado a parseInt no es un numero";
+        }
+      } catch (error) {
+        alert("Error: "+error);
+    }
+  }
+
+    function Mifuncion2(){
+      try {
+        var res = 45/0;
+        if (res==Infinity){
+          throw "division entre cero no es valida";
+        }
+      } catch (error) {
+        alert("Error: "+error);
+    }
+  }
+
+  </script>
+</html>

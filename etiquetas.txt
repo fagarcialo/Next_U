@@ -72,3 +72,157 @@ Dentro de
 	<svg> sirve para trabajar imagenes svg o escalares
 		<image>
 		
+		
+**********************************		
+CSS
+**********************************
+
+
+*selectores atributos
+	a[href]{
+	}
+	a[href='http:\\www.google.com']{
+	}
+	img[src$='.jpg']{ //busca al final de la palabra
+	img[src^='jpg']{ //busca al principio de la palabra
+	img[src~='jpg']{ //busca al en multiples partes de la palabra
+	img[src|-='jpg']{ //busca al principio o en todo el contenido de la palabra, pero debe estar seguido de un guion
+	[title*='description'] selecciona todas las etiquetas con el atributo title 'description'
+	img[src$='.jpg'],img[src$='.png']{
+	article[class='caja']{
+		border:4px solid black;
+		display:inline-block;//para que quede en una linea(si cabe)
+		height:220px;
+		witdth:400px;
+		}
+	}
+	
+*selectores avanzados	
+	*{//selector universal
+	margin: 1vh 1vw;//margenes verticales y horizontales fuera de la caja
+	padding: 1vh 1vw;//margenes verticales y horizontales dentro de la caja
+	text-align: justify;//justifica el texto
+	border-radios:5px;//redondea una caja o imagen
+	color:white;//color texto
+	border:1px solid black; //pone el borde de una caja o imagen de color negro
+	text-decoration:underline; //subraya el texto
+	font-size:32px;//aumenta tamaño letra
+	}
+	h1 + h2 {//solo aplica a h2, que tienen precedido un h1
+	}
+	h2 ~ p {} //solo afecta hijos directos, a p
+	article > h2{}//afecta al hijo directo, en este caso h2, pero solo al hijo, no nietos
+	ul li {} //afecta a todos los hijos
+	
+*Pseudo-­clases
+	a[href^='http://']:visited{color: red;}//afecta si ya se visito el sitio
+	a:hover{color:blue;}//afecta si pasan el mouse por encima
+	input:focus{width:160px;hight:140px}//aumenta el tamaño cuando se paran en el campo
+	p::first-letter{text-transform:capitalize;}//capitaliza primer letra de un parrafo
+	p::first-line{font-size:32px;}//afecta a la primer linea de un parrafo
+	p::selection{color:red;}
+*Pseudo-elementos
+	#estudios>ul>li:first-child>a::after{content:' "-hola"'}//agrega al primer elemento a de la lista, la palabra hola al final
+	#estudios>ul>li:last-child>a::before{content:' "-hola"'}//agrega al ultimo elemento a de la lista, la palabra hola al principio
+	#estudios>ul>li:nth-child(2)>a::before{content:' "-hola"'}//agrega al segundo elemento a de la lista, la palabra hola al principio
+		
+lorem parrafo de pruebas	
+
+*Display
+	cambia el comportamiento normal del navegador, de arriba a abajo, reacomodando las cajas
+	h1{display:none;
+		opacity:0;
+	}
+	h2{display:inline;
+	}
+	p{display:inline;
+	}
+	
+*float
+	sirve para indicar si la caja va a la izquierda o derecha
+	section aside{
+		witdth:20%
+		float:left;
+		}
+	section article{
+		witdth:80%
+		float:right;
+		}	
+	footer{
+		clear:both; //para elimiar float
+		}	
+*position
+	para ubicar cajas
+	header{
+		position:fixed;
+		top:0;
+	}
+	footer{
+		position:fixed;
+		bottom:0;
+	}
+	#absoulute{
+		postition: absolute;
+		top: 200px;
+		left: 35%;
+	}
+	#etiqueta{
+		position: relative;
+		top: 400px;
+		margin-left: -50px;
+	}
+*flex
+	para ubicar cajas, se puede usar la instruccion "order:" para indicar el orden de las cajas 
+	#caja1{
+		order:1;
+		flex-grow: 1;//indica como crece la caja con respecto a las otras
+	}
+	.contenedor{
+		display: flex;
+		flex-direction: row;
+	}
+	div[class*="bloque"]{
+		flex-basis:40%;//le asigna un tamaño inicial a todas las cajas
+	}
+	
+*sombras y efectos
+	h1{
+		text-shadow: 1px 1px #fff;	
+	}
+
+*Propiedades de color y fondo
+	h1{
+	color: rgb(255,255,255);//color letra
+	background: hsl(0,0%,21%//color fondo
+	background: url(../img/logo.jpg) right top no-repeat,//logo encima de foto
+	            url(../img/foto.jpg) left top repeat;//fondo con foto
+	background-size: 150px, 100px;			
+	}
+*efectos de caja
+	caja{
+		border-radius: 10px 10px 0px 0px;
+		-moz-border-radius: 10px 10px 0px 0px;/*mozilla*/
+		-webkit-border-radius: 10px 10px 0px 0px;/*safari*/
+		background: linear-gradient(#fff, #67B8DE, #CDEDFF);//degradado de fondo lineal
+		background: radial-gradient(#fff, #67B8DE, #CDEDFF);//degradado de fondo circular
+		box-shadow: 30px 30px 10px rgba(0,0,0,0.2);//sombra a caja
+	}
+	
+*RESPONSIVE
+
+*viewport
+	<meta name="viewport" content="initial-scale 1.0, width=device, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*Imágenes Adaptativas
+	<figure>
+		<figcaption>etiqueta de la imagen</figcaption>
+		<img src="../img/foto.jpg" alt="Imagen" width="100%" />
+	</figure>
+	
+*media query
+	@media (min-width: 600px) {
+	.contenido2 {
+		display: flex;
+		flex-direction: column;
+	}
+}

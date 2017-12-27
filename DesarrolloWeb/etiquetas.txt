@@ -1,0 +1,74 @@
+https://learn.nextu.com/mod/page/view.php?id=3027
+
+Dentro de 
+<body>
+	<h1> Titulos
+	<p> parrafos
+	<br/> salto de linea
+	<strong> negrilla
+	<em> cursiva
+	<ol> Listas Ordenadas
+	<li> elemento lista
+	<ul> listas no ordendas, por viñetas
+	<img src="img/nombre.jpg" alt="Imagen estudiante" tittle="Titulo de la imagen" width="100px" hight="100px" />
+	
+	//tablas
+	<table>
+		<tr> filas
+			<th> columnas en negrilla
+			<td> columnas
+			
+			<thead>
+			<tbody>
+			<tfoot>
+			
+			rowspan = une filas
+			colspan = une columnas
+	
+	//formularios	
+	<form>	
+		autocomplete="on"
+		name="nombre del formulario"
+		
+		<fieldset> conjuto de campos, recuadro
+		<legend> Titulo del formulario
+		<label> texto del campo, titulo
+		<input type="text"> campo de texto
+			name
+			id
+			disable
+			readonly
+			maxlength
+			max
+			min
+			value
+			step
+			placeholder
+		<select> para hacer combos
+			<option>valor1</option>
+			<option>valor2</option>
+			<option>valor3</option>
+		<textarea> un campo grande	
+	
+	<a href=""> para crear hiperbinculos
+		download
+		mailto
+		img
+		
+	<audio src="archivo.mp3" controls> para sonidos
+		autoplay
+		loop
+		preload = "none" "auto"
+		
+	<video src="archivo.mp3" controls> para sonidos
+		autoplay
+		poster
+		loop
+		preload = "none" "auto"
+		with
+		higth
+	<iframe> para agregar frames en nuestra pagina, referenciando a otra, ejemplo maps
+		 sandbox="allow_forms"
+	<svg> sirve para trabajar imagenes svg o escalares
+		<image>
+		

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Evaluaciones Estudiantes</title>
+  </head>
+  <body>
+    <h1>Notas Estudiantes</h1>
+    <p id="resultado"></p>
+    <input type="button" name="todo" value="Mostrar Todo" onclick="mostrarTodo()">
+    <input type="button" name="promedio" value="Promedio" onclick="promedio()">
+    <input type="button" name="mayor" value="Mayor" onclick="mayor()">
+    <input type="button" name="menor" value="Menor" onclick="menor()">
+
+  </body>
+
+  <script>
+
+  var jsonText = '{"estudiantes":['+
+  '{"codigo":"30945","nombre":"Fabio Garcia","nota":"4.5"},'+
+  '{"codigo":"30946","nombre":"Lorenzo Lamas","nota":"4.2"},'+
+  '{"codigo":"30946","nombre":"Mario Baracus","nota":"2.6"},'+
+  '{"codigo":"30946","nombre":"Murray","nota":"4.0"},'+
+  '{"codigo":"30946","nombre":"Fredy Lopez","nota":"3.3"},'+
+  '{"codigo":"30946","nombre":"Jordan","nota":"3.6"},'+
+  '{"codigo":"30946","nombre":"Frankestein","nota":"3.9"},'+
+  '{"codigo":"30946","nombre":"Pedro Gomez","nota":"4.0"},'+
+  '{"codigo":"30946","nombre":"Mario Garcia","nota":"4.2"}'+
+  ']}';
+
+  function mostrarTodo(){
+    try {
+      var cadena = "";
+      var json =JSON.parse(jsonText);
+      for(i=0;i<json.estudiantes.length;i++){
+        cadena += "Código "+json.estudiantes[i].codigo + "- Nombre Estudiante:" + json.estudiantes[i].nombre + "- Nota Final:" + json.estudiantes[i].nota + "<br>";
+      }
+      document.getElementById("resultado").innerHTML = cadena;
+    } catch (e) {
+      alert(e.message);
+    }
+  }
+
+  function promedio(){
+    try {
+      var suma = 0;
+      var json =JSON.parse(jsonText);
+      for(i=0;i<json.estudiantes.length;i++){
+        //alert("suma="+suma+" nota="+parseInt(json.estudiantes[i].nota));
+        suma += parseFloat(json.estudiantes[i].nota);
+
+      }
+      var resultado = (suma/json.estudiantes.length);
+      document.getElementById("resultado").innerHTML = "La nota promedio del curso es: "+resultado.toPrecision(2);
+    } catch (e) {
+      alert(e.message);
+    }
+  }
+
+  function mayor(){
+    try {
+      var vlr_mayor = 0;
+      var estudiante ="";
+      var json =JSON.parse(jsonText);
+
+      for(i=0;i<json.estudiantes.length;i++){
+        //alert("suma="+suma+" nota="+parseInt(json.estudiantes[i].nota));
+        if (parseFloat(json.estudiantes[i].nota)>vlr_mayor){
+          vlr_mayor = parseFloat(json.estudiantes[i].nota);
+          estudiante = json.estudiantes[i].nombre;
+        }
+      }
+      document.getElementById("resultado").innerHTML = "La nota mayor del curso es: "+vlr_mayor+" correspondiente al estudiante: "+estudiante;
+    } catch (e) {
+      alert(e.message);
+    }
+  }
+
+  function menor(){
+    try {
+      var vlr_menor = 5;
+      var estudiante ="";
+      var json =JSON.parse(jsonText);
+
+      for(i=0;i<json.estudiantes.length;i++){
+        //alert("suma="+suma+" nota="+parseInt(json.estudiantes[i].nota));
+        if (parseFloat(json.estudiantes[i].nota)<vlr_menor){
+          vlr_menor = parseFloat(json.estudiantes[i].nota);
+          estudiante = json.estudiantes[i].nombre;
+        }
+      }
+      document.getElementById("resultado").innerHTML = "La nota menor del curso es: "+vlr_menor+" correspondiente al estudiante: "+estudiante;
+    } catch (e) {
+      alert(e.message);
+    }
+  }
+
+
+
+  </script>
+
+</html>

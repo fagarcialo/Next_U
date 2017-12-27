@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Convirtiendo datos</h1>
+    <p id="r1"></p>
+    <p id="r2"></p>
+    <p id="r3"></p>
+    <p id="r4"></p>
+    <p id="r5"></p>
+    <p id="r6"></p>
+    <p id="r7"></p>
+    <p id="r8"></p>
+    <p id="r9"></p>
+
+  </body>
+
+  <script>
+    //Convertir cadena en numero
+    var cadena1 = "5.2";
+    document.getElementById("r1").innerHTML = Number(cadena1);
+    document.getElementById("r2").innerHTML = parseInt(cadena1);
+
+    //Convertir numero en cadena
+    var numero = 52582;
+    document.getElementById("r3").innerHTML = numero.toString();
+    document.getElementById("r4").innerHTML = String(numero);
+
+    //Convertir fecha en cadena
+    document.getElementById("r5").innerHTML = Date().toString();
+    document.getElementById("r6").innerHTML = String(Date());
+
+    //Convertir boolean cadena
+    document.getElementById("r7").innerHTML =true.toString();
+    document.getElementById("r8").innerHTML = String(false);
+
+    //Convertir boolean a numero
+    document.getElementById("r9").innerHTML =Number(true);
+
+
+  </script>
+</html>

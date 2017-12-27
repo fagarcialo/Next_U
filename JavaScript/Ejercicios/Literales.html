@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Literales Numericos</h1>
+    <p id="numerico1"></p>
+    <p id="numerico2"></p>
+    <p id="numerico3"></p>
+
+    <h1>Literales de cadena</h1>
+    <p id="cadena1"></p>
+    <p id="cadena2"></p>
+    <p id="cadena3"></p>
+
+    <h1>Literales de expresion</h1>
+    <p id="expresion1"></p>
+    <p id="expresion2"></p>
+    <p id="expresion3"></p>
+
+    <h1>Literales de funcion</h1>
+    <p id="funcion1"></p>
+    <p id="funcion2"></p>
+  </body>
+
+  <script>
+    document.getElementById("numerico1").innerHTML = 1234;
+    document.getElementById("numerico2").innerHTML = 1.5;
+    document.getElementById("numerico3").innerHTML = 55e2;
+
+    document.getElementById("cadena1").innerHTML = "Hola";
+    document.getElementById("cadena2").innerHTML = 'Mundo';
+    document.getElementById("cadena3").innerHTML = ':)';
+
+    document.getElementById("expresion1").innerHTML = 3+5;
+    document.getElementById("expresion2").innerHTML = 4*3;
+    document.getElementById("expresion3").innerHTML = 8/4+3;
+
+    function miFuncion(){
+        document.getElementById("funcion1").innerHTML = "Mi Funcion";
+    }
+    miFuncion();
+
+    function miFuncion2(){
+        var a;
+        a = "Hola Mundo";
+        return a;
+    }
+
+    var res;
+    res = miFuncion2();
+    document.getElementById("funcion2").innerHTML = res;
+
+  </script>
+</html>

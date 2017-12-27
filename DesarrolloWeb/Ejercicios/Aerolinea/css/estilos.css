@@ -1,0 +1,63 @@
+body {
+	margin: 20px;//le pone margen a todo el body
+	font-family: Verdana;//cambia tipo de letra
+}
+
+#menu-principal {
+	padding: 10px 0px;
+}
+
+#menu-principal a {
+	color: green; //color letras menu
+	text-decoration: none;// elimina subrayado de hipervinculo
+}
+
+#menu-principal a:hover {
+	text-decoration: underline; //pone subrayado a hipervinculo cuando pasa el mouse por encima
+}
+
+#menu-principal a + a::before {
+	content: " | "; //le adiciona el caracter | a cada hipervinculo antes, a partir del segundo
+	color: black;
+}
+
+#menu-principal a::after {
+	content: " * ";//le adiciona el caracter * a cada hipervinculo despues a todos
+	color: red;
+}
+
+footer {
+	margin-top: 20px; //Separa la parte arriba del pie de pagina
+	border-top: solid 1px black;//crea linea a pie de pagina
+	padding-top: 10px;//Separa el pie de pagina a la linea
+	text-align: center;//centra el pie de pagina
+}
+
+table {
+	border-collapse: collapse;//une las lineas de la tabla
+}
+
+table, th, td {
+	border: solid 1px black;//borde de las lineas de la tabla
+	padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+	background: #CCC;//fondo de tabla titulos pares
+}
+
+tbody tr:nth-child(odd) {
+	background: #CCF;//fondo de tabla titulos impares
+}
+
+tbody tr:nth-child(even):hover {
+	background: #DDD;//cambia color cuando pasan por encima, pares
+}
+
+tbody tr:nth-child(odd):hover {
+	background: #DDF;//cambia color cuando pasan por encima, impares
+}
+
+.sombra {
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);//aplica sombreado a tabla
+}

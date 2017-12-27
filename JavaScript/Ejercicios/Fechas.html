@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fechas</title>
+  </head>
+  <body>
+    <h1>Fechas</h1>
+      <p id="d1"></p>
+      <p id="d2"></p>
+      <p id="d3"></p>
+      <p id="d4"></p>
+      <p id="d5"></p>
+      <p id="d6"></p>
+      <p id="d7"></p>
+      <p id="d8"></p>
+      <p id="d9"></p>
+      <p id="d10"></p>
+      <p id="d11"></p>
+  </body>
+
+  <script>
+    //Objeto Date
+    var fecha1 = new Date();
+    var fecha2 = new Date("December 26, 2014 12:30:20");
+    var fecha3 = new Date(2015, 0, 20);
+
+    document.getElementById("d1").innerHTML = fecha1;
+    document.getElementById("d2").innerHTML = fecha2;
+    document.getElementById("d3").innerHTML = fecha3;
+
+    //Metodos
+
+    document.getElementById("d4").innerHTML = fecha1.getFullYear();
+    fecha1.setFullYear(2018);
+    document.getElementById("d5").innerHTML = fecha1.getFullYear();
+
+    document.getElementById("d6").innerHTML = fecha1.getMonth();
+    fecha1.setMonth(5);
+    document.getElementById("d7").innerHTML = fecha1.getMonth();
+
+    document.getElementById("d8").innerHTML = fecha1.getDate();
+    fecha1.setDate(19);
+    document.getElementById("d9").innerHTML = fecha1.getDate();
+
+    document.getElementById("d10").innerHTML = fecha1.getHours();
+    fecha1.setHours(23);
+    document.getElementById("d11").innerHTML = fecha1.getHours();
+  </script>
+</html>

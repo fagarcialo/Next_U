@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Strings</title>
+  </head>
+  <body>
+    <h1>Strings</h1>
+
+    <p id="s1"></p>
+    <p id="s2"></p>
+    <p id="s3"></p>
+    <p id="s4"></p>
+
+    <h1>Strings Metodos</h1>
+    <p id="s5"></p>
+    <p id="s6"></p>
+    <p id="s7"></p>
+    <p id="s8"></p>
+    <p id="s9"></p>
+    <p id="s10"></p>
+    <p id="s11"></p>
+    <p id="s12"></p>
+    <p id="s13"></p>
+  </body>
+
+  <script>
+    var saludo1 = "Hola";
+    var saludo2 = 'Mundo';
+    var tamanio = saludo2.length;
+    var objetostring = new String("Objeto String");
+
+    document.getElementById("s1").innerHTML = saludo1;
+    document.getElementById("s2").innerHTML = saludo2;
+    document.getElementById("s3").innerHTML = tamanio;
+    document.getElementById("s4").innerHTML = objetostring;
+
+    //metodos string
+
+    var cadena1 = "Esta es ";
+    var cadena2 = "Una cadena ";
+    var cadena3 = "de texto concatenada";
+    var cadena4 = cadena1.concat(cadena2,cadena3);
+
+    document.getElementById("s5").innerHTML = cadena4;
+
+    var cadena5 = "Cadena original Programando en ORACLE";
+    document.getElementById("s6").innerHTML = cadena5;
+
+    var cadena6 = cadena5.replace("ORACLE","JavaScript");
+    document.getElementById("s7").innerHTML = cadena6;
+
+    var cadena7 = "Esta es la cadena original, vamos a sacar un pedacito";
+    document.getElementById("s8").innerHTML = cadena7;
+
+    var cadena8 = cadena7.substring(8,20);
+    document.getElementById("s9").innerHTML = cadena8;
+    document.getElementById("s10").innerHTML = cadena7.substring(0,10);
+
+    var cadena9 = "cadena en minuscula";
+    document.getElementById("s11").innerHTML = cadena9.toUpperCase();
+
+    var cadena10 = "cadena en mayuscula";
+    document.getElementById("s12").innerHTML = cadena9.toLowerCase();
+
+
+
+  </script>
+</html>

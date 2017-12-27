@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+    function restablecer(){
+      alert("Se ha reestablecido el formulario");
+    }
+    </script>
+  </head>
+
+  <body>
+    Restablecer texto
+    <form onreset="restablecer()">
+      Universidad <input type="text" name="" value="">
+      Pais <input type="text" name="" value="">
+      <input type="reset">
+    </form>
+
+    Este no reestablece por q esta fuera del formulario<input type="text" id="texto1" onchange="convertir()">
+  </body>
+</html>
