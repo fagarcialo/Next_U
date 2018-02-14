@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/estilos.css'>
+    <script src='js/bootstrap.min.js'></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+    <title>Sonorik</title>
+  </head>
+
+  <body class="propiedades-body">
+    <!-- barra superior-->
+    <div class="container-fluid">
+      <header class="barra-superior">
+        <nav class='navbar navbar-inverse navbar-fixed-top barra-superior'><!-- propiedades para que quede inmovil -->
+          <div class="container-fluid">
+            <!-- Icono y menus -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed boton-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar color-span-boton"></span>
+                <span class="icon-bar color-span-boton"></span>
+                <span class="icon-bar color-span-boton"></span>
+              </button>
+              <img class='logo-img' src='images/logo.png'/>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html"><h4>Inicio</h4></a></li>
+                <li><a href="sonido.html"><h4>Sonido En Vivo</h4></a></li>
+                <li><a href="iluminacion.html"><h4>Iluminación</h4></a></li>
+                <li><a href="dj.html"><h4>DJ</h4></a></li>
+                <li><a href="backline.html"><h4>BackLine</h4></a></li>
+              </ul>
+            </div>
+
+          </div>
+        </nav>﻿
+      </header>
+    </div>
+
+    <!-- jumbotron -->
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='jumbotron'>
+          <div class='row'>
+            <div class='col-md-2 text-center'></div>
+            <!-- Titulos principales -->
+            <div class='col-md-5 text-center'>
+              <div class="sombra">
+                <h1>Soluciones Sonoras</h1>
+                <p class="sombra ">Servicio profesional de sonido y luces</p>
+                <h1>Llámanos ahora al 3174372884</h1>
+                <p><a href="#quienes-somos" class="btn-primary btn-lg">Leer mas</a>
+                </p>
+              </div>
+
+            </div>
+            <!-- formulario contactenos -->
+            <div class='col-md-3 text-center'>
+              <div class="sombra">
+                <h2>Contáctenos</h2>
+                <form role="form" method="post" action="enviar_email.php">
+                  <fieldset>
+                    <div class='form-group text-center'>
+                      <legend class='user_data sombra'>Datos personales</legend>
+                      <input type='text' name='nombre' id='nombre' placeholder='Nombre Completo' class='form-control input-element'/>
+                      <input type='text' name='email' id='email' placeholder='Correo eléctronico' class='form-control input-element'/>
+                      <input type='text' name='telefono' id='telefono' placeholder='Télefono' class='form-control input-element'/>
+                      <input type='text' name='ciudad' id='ciudad' placeholder='Ciudad' class='form-control input-element'/>
+                      <textarea class="form-control input-element" rows="5" name='comentario' id="comentario" placeholder='Escriba aqui sus comentarios, inquietudes y preguntas.'></textarea>
+                    </div>
+                    <div class='form-group text-center'>
+                      <legend class='user_data sombra'>Elige el servicio solicitado</legend>
+                      <input type='checkbox' name='sonido' id='sonido' />
+                      <label for='terror' class='label-class'>Sonido</label>
+                      <input type='checkbox' name='iluminacion' id='iluminacion' />
+                      <label for='comedia' class='label-class'>iluminació</label>
+                      <input type='checkbox' name='dj' id='dj' />
+                      <label for='suspenso' class='label-class'>DJ</label>
+                      <input type='checkbox' name='backline' id='backline' />
+                      <label for='accion' class='label-class'>BackLine</label>
+                    </div>
+
+                    <div class='text-center'>
+                      <button type='submit' class='btn btn-primary btn-save form-control'>Enviar</button>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+
+            <div class='col-md-2 text-center'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+      <!-- quienes somos -->
+      <!--<div class='container hidden-xs hidden-sm margenes' id="quienes-somos">-->
+      <div class='container margenes' id="quienes-somos">
+        <div class='row '>
+          <div class='col-sm-2 col-lg-2 text-center'></div>
+          <div class='col-sm-4 col-lg-4 text-center'>
+            <div class='row text-center'>
+              <img class='img-responsive img-thumbnail imagen-rotadora' src="images/sonorik10.jpg" alt="">
+            </div>
+          </div>
+          <div class='col-sm-4 col-lg-4 text-justify'>
+            <h2 class="text-center">Quienes somos?</h2>
+            <p class="color-parrafo">Somos una organización en función de atender cualquier necesidad,  para que sus eventos tengan la calidad que usted merece, hacemos posibles sus ideas sin importar que tan sencillas parezcan, le damos la importancia que su público espera.</p>
+          </div>
+          <div class='col-sm-2 col-lg-2 text-center'></div>
+        </div>
+      </div>
+
+
+      <!-- nuestros servicios -->
+      <div class='row'>
+        <div class='col-lg-12 left-column  titulo-cartelera'>
+          <header class='titulo-text text-capitalize text-center'><h2>Nuestros Servicios</h2></header>
+        </div>
+      </div>
+
+      <div class='row row-centered'>
+          <!-- Sonido en vivo -->
+          <div class='col-xs-12 col-sm-6 col-md-3 text-center'>
+            <div class="row">
+                <a href="sonido.html"><img class='img-responsive escala-grises quitar-escala-grises bailar' src='images/SONIDO_EN_VIVO.jpg'/></a>
+                <div class="caption">
+                  <h2>SONIDO EN VIVO</h2>
+                  <p>Proporcionamos sonido conforme a requerimientos técnicos y/o necesidad de cada evento.</p>
+                </div>
+            </div>
+          </div>
+          <!-- Iluminacion -->
+          <div class='col-xs-12 col-sm-6 col-md-3 text-center'>
+            <div class=row>
+                <a href="iluminacion.html"><img class='img-responsive escala-grises quitar-escala-grises bailar' src='images/ILUMINACION.jpg'/></a>
+                <div class="caption">
+                  <h2>ILUMINACIÓN</h2>
+                  <p>Creamos espacios de iluminación de acuerdo a la situación y preferencias.</p>
+                </div>
+            </div>
+          </div>
+          <!-- DJ -->
+          <div class='col-xs-12 col-sm-6 col-md-3 text-center'>
+            <div class=row>
+                <a href="dj.html"><img class='img-responsive escala-grises quitar-escala-grises bailar' src='images/DJ.jpg'/></a>
+                <div class="caption">
+                  <h2>DJ</h2>
+                  <p>Contamos con Dj's con la mejor energía para hacer de cada evento el mejor y un momento digno de recordar.</p>
+                </div>
+            </div>
+          </div>
+          <!-- Back Line -->
+          <div class='col-xs-12 col-sm-6 col-md-3 text-center'>
+            <div class=row>
+                <a href="backline.html"><img class='img-responsive escala-grises quitar-escala-grises bailar' src='images/BACKLINE.jpg'/></a>
+                <div class="caption">
+                  <h2>BACKLINE</h2>
+                  <p>Atendemos requerimientos técnicos de músicos y artistas con la mejores marcas y configuraciones.</p>
+                </div>
+            </div>
+          </div>
+      </div>
+
+    <!-- Pie -->
+    <footer>
+      <div class="container-fluid cinema-footer">
+        <div class='row'>
+          <div class='col-lg-12 text-center'>
+            <!-- Redes Sociales -->
+            <div class="container">
+              <h2>Encuentranos en las siguientes Redes Sociales</h2>
+              <div class="text-center center-block">
+                <br>
+                <a href="https://www.facebook.com/SonoriK-540686302947813/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=573174372884" data-toggle="tooltip" title="Whatsapp:317 4372884!"><i id="social-ws" class="fa fa-whatsapp fa-3x social"></i></a>
+  	            <a href="https://twitter.com/Sonorik1"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="https://www.instagram.com/sonorik/?hl=es "><i id="social-in" class="fa fa-instagram fa-3x social"></i></a>
+  	            <a href="contactenos.html"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+              </div>
+            <h4>Dirección: Trv 119 A # 77-9 Bogota</h4>
+            <h4>Correo: kilder@sonorik.com</h4>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class='row'>
+        <div class='col-lg-12 text-center'>
+          <h6>Página creada por <a href="http:\\www.clicksoft.com.co">www.clicksoft.com.co </a>Todos los derechos de Autor</h6>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+
+</html>

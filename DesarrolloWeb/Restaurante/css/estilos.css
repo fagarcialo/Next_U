@@ -1,0 +1,325 @@
+div{
+  /*border: 1px solid white;*/
+  padding: 0px;
+  text-align: center;
+  margin:0 auto;
+  padding: 10px;
+  /*padding-top: 10px;
+  padding-bottom: 10px;*/
+}
+
+img{
+  margin:0 auto;/*centra la imagen*/
+}
+
+p{
+  color: white;
+  /*padding: 30px;*/
+  font-family: 'Marmelad', sans-serif;
+}
+
+.titulo-pagina{
+  font-family: 'Oleo Script', cursive;
+}
+
+h2{
+  font-family: 'Oleo Script', cursive;
+}
+
+h3{
+  /*background: #3498DB;*/
+  font-family: 'Oleo Script', cursive;
+}
+
+figure img {
+	width: 50%;
+}
+
+#efecto-imagen img{
+	transition-property: width;
+	transition-duration: 0.5s;
+}
+
+#efecto-imagen img:hover{
+	width: 70%;
+}
+
+.propiedades-body {
+  /*background: url(../images/consola.jpg);*/
+  /*background: #17202A;*/
+  background: black;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /*width: 100%;
+  height: 100%;*/
+  color: white;
+}
+
+.logo-img {
+  width: 150px;
+}
+
+.barra-superior{
+  background: black;
+}
+
+.boton-menu{
+  border: 1px solid white;
+  border-color: white;
+}
+
+.color-span-boton{
+  border: 1px solid white;
+  border-color: white;
+  color: white;
+}
+
+.jumbotron {
+  background: url(../images/fondo.jpg);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: 1000px;
+  background-size: cover;
+  background-attachment: fixed;/*efecto de imagen de atras del jumbotrom*/
+  min-height: 500px;
+  margin-top: 17px;
+  margin-bottom: 5px;/*espacio entre el jumbotrom y quienes somos*/
+}
+
+.jumbotron-img {
+  width: 100%;
+  height: 1200px;
+  margin-top: 20px;
+}
+
+.jumbotron-text {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #FFFFFF;
+}
+
+.welcome-title {
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.sombra {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #FFFFFF;
+}
+.titulo-cartelera {
+  min-height: 35px;
+  /*background-color: rgba(8, 45, 94, 0.95);*/
+  background: #3498DB;
+}
+
+.color-thumbnail{
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.tamano-slide{
+  width: 800px;
+}
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Redes Sociales
+*/
+
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-ws:hover {
+     color: green;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
+ #social-in:hover {
+     color: red;
+ }
+
+/*
+.acordeon-espacio{
+  margin: auto;
+  padding-top: 5px;
+  background: #2471A3;
+}
+
+.imagen-margenes{
+  width: 50%;
+}
+
+.parrafo-margenes{
+  margin: 30px;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+.navbar-inverse {
+  /*background-color: rgba(8, 45, 94, 0.95);
+  /*background: #3498DB;*/
+  /*background: black;
+  min-height: 10%;
+  border: none;
+}
+
+
+
+.container-fluid {
+  margin-top: 73px;
+}
+
+
+
+/*.redes-sociales {
+  margin-top: 30px;
+}
+
+.img-social {
+  width: 40px;
+  height: 40px;
+}
+
+.img-movies {
+  height: 260px;
+  padding: 6px;
+  margin-top: 22px;
+}
+
+.movie-title {
+  color: #FFFFFF;
+}
+
+
+
+.welcome-title2 {
+  color: #0B2161;
+  margin-right: 10px;
+}
+
+
+
+.titulo-cartelera {
+  min-height: 35px;
+  /*background-color: rgba(8, 45, 94, 0.95);*/
+  /*background: #3498DB;
+}
+
+.titulo-text {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.color-parrafo{
+  color: #808B96;
+}
+
+
+.left-column {
+  border-right: 1px dashed #FFFFFF;
+}
+
+.row-centered {
+  text-align:center;
+}
+
+.services-text {
+  color: #FFFFFF;
+  margin-top: 13px;
+}
+
+.col-centered {
+  display:inline-block;
+  float:none;
+}
+
+.cinema-footer {
+  min-height: 35px;
+  background-color: rgba(8, 45, 94, 0.95);
+  background: #17202A;
+  color: #FFFFFF;
+}
+*/
+@media (max-width: 770px) {
+  .padding-div-xs{
+    padding: 30px;
+    /*padding: 10px;*/
+    /*padding-top: 10px;
+    padding-bottom: 10px;*/
+  }
+  h2 {
+    font-size: 22px;
+  }
+
+  .titulo-text {
+    font-size: 15px;
+  }
+
+  .right-column {
+    display: none;
+  }
+
+  .movies-row {
+    padding-left: 0px;
+    padding-right: 0px;
+    min-height: 250px;;
+  }
+
+  .container-fluid{
+    margin-top: 50px;
+  }
+
+  .movies-column {
+    min-height: 230px;
+  }
+
+  .jumbotron {
+    min-height: 400px;
+  }
+
+  .jumbotron-img {
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .img-movies {
+    height: 133px;
+    padding: 6px;
+    margin-top: 22px;
+  }
+  .logo-img {
+    width: 180px;
+  }
+  .tamano-slide{
+    width: 350px;
+  }
+}
+
+
+/*.box-ct {
+    margin-top: 30px;
+}*/

@@ -1,0 +1,245 @@
+div{
+  /*border: 1px solid black;*/
+  padding: 10px;
+}
+
+p{
+  color: white;
+}
+
+h3{
+  background: #3498DB;
+}
+
+.propiedades-body {
+  /*background: url(../images/consola.jpg);*/
+  /*background: #17202A;*/
+  background: black;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.logo-img {
+  width: 150px;
+}
+
+.barra-superior{
+  background: black;
+}
+
+.boton-menu{
+  border: 1px solid white;
+  border-color: white;
+}
+
+.color-span-boton{
+  border: 1px solid white;
+  border-color: white;
+  color: white;
+}
+
+.jumbotron {
+  background: url(../images/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;/*efecto de imagen de atras del jumbotrom*/
+  min-height: 500px;
+  margin-top: 17px;
+  margin-bottom: 5px;/*espacio entre el jumbotrom y quienes somos*/
+}
+
+.jumbotron-img {
+  width: 100%;
+  height: 1200px;
+  margin-top: 20px;
+}
+
+.jumbotron-text {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #FFFFFF;
+}
+
+.welcome-title {
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.sombra {
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+}
+.titulo-cartelera {
+  min-height: 35px;
+  /*background-color: rgba(8, 45, 94, 0.95);*/
+  background: #3498DB;
+}
+
+.color-thumbnail{
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.tamano-slide{
+  width: 1800px;
+}
+
+/*
+.acordeon-espacio{
+  margin: auto;
+  padding-top: 5px;
+  background: #2471A3;
+}
+
+.imagen-margenes{
+  width: 50%;
+}
+
+.parrafo-margenes{
+  margin: 30px;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+.navbar-inverse {
+  /*background-color: rgba(8, 45, 94, 0.95);
+  /*background: #3498DB;*/
+  /*background: black;
+  min-height: 10%;
+  border: none;
+}
+
+
+
+.container-fluid {
+  margin-top: 73px;
+}
+
+
+
+/*.redes-sociales {
+  margin-top: 30px;
+}
+
+.img-social {
+  width: 40px;
+  height: 40px;
+}
+
+.img-movies {
+  height: 260px;
+  padding: 6px;
+  margin-top: 22px;
+}
+
+.movie-title {
+  color: #FFFFFF;
+}
+
+
+
+.welcome-title2 {
+  color: #0B2161;
+  margin-right: 10px;
+}
+
+
+
+.titulo-cartelera {
+  min-height: 35px;
+  /*background-color: rgba(8, 45, 94, 0.95);*/
+  /*background: #3498DB;
+}
+
+.titulo-text {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.color-parrafo{
+  color: #808B96;
+}
+
+
+.left-column {
+  border-right: 1px dashed #FFFFFF;
+}
+
+.row-centered {
+  text-align:center;
+}
+
+.services-text {
+  color: #FFFFFF;
+  margin-top: 13px;
+}
+
+.col-centered {
+  display:inline-block;
+  float:none;
+}
+
+.cinema-footer {
+  min-height: 35px;
+  background-color: rgba(8, 45, 94, 0.95);
+  background: #17202A;
+  color: #FFFFFF;
+}
+*/
+@media (max-width: 770px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .titulo-text {
+    font-size: 15px;
+  }
+
+  .right-column {
+    display: none;
+  }
+
+  .movies-row {
+    padding-left: 0px;
+    padding-right: 0px;
+    min-height: 250px;;
+  }
+
+  .container-fluid{
+    margin-top: 50px;
+  }
+
+  .movies-column {
+    min-height: 230px;
+  }
+
+  .jumbotron {
+    min-height: 400px;
+  }
+
+  .jumbotron-img {
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .img-movies {
+    height: 133px;
+    padding: 6px;
+    margin-top: 22px;
+  }
+  .logo-img {
+    width: 200px;
+  }
+}
+
+
+/*.box-ct {
+    margin-top: 30px;
+}*/

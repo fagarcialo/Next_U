@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/estilos.css'>
+    <script src='js/bootstrap.min.js'></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Sonorik</title>
+  </head>
+
+  <body class="propiedades-body">
+    <!-- barra superior-->
+    <div class="container-fluid">
+      <header class="barra-superior">
+        <nav class='navbar navbar-inverse navbar-fixed-top barra-superior'><!-- propiedades para que quede inmovil -->
+          <div class="container-fluid">
+            <!-- Icono y menus -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed boton-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar color-span-boton"></span>
+                <span class="icon-bar color-span-boton"></span>
+                <span class="icon-bar color-span-boton"></span>
+              </button>
+              <img class='logo-img' src='images/logo.png'/>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sonido.html">Sonido En Vivo</a></li>
+                <li><a href="#">Iluminación</a></li>
+                <li><a href="#">DJ</a></li>
+                <li><a href="#">BackLine</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>﻿
+      </header>
+    </div>
+
+    <!-- jumbotron -->
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='jumbotron'>
+          <div class='row'>
+            <div class='col-lg-2 text-center'></div>
+            <!-- Titulos principales -->
+            <div class='sombra col-lg-5 text-center welcome-title'>
+            <h1>Soluciones Sonoras</h1>
+            <p class="sombra ">Servicio profesional de sonido y luces</p>
+            <h1>Llamanos ahora al 3174372884</h1>
+            <p><a href="#quienes-somos" class="btn-primary btn-lg">Leer mas</a>
+            </p>
+            </div>
+            <!-- formulario contactenos -->
+            <div class='col-lg-3 text-center sombra'>
+              <h1>Contactenos</h1>
+              <form role="form" method="post" action="enviar_email.php">
+                <fieldset>
+                  <div class='form-group text-center'>
+                    <legend class='user_data sombra'>Datos personales</legend>
+                    <input type='text' name='nombre' id='nombre' placeholder='Nombre Completo' class='form-control input-element'/>
+                    <input type='text' name='email' id='email' placeholder='Correo eléctronico' class='form-control input-element'/>
+                    <input type='text' name='telefono' id='telefono' placeholder='Télefono' class='form-control input-element'/>
+                    <input type='text' name='ciudad' id='ciudad' placeholder='Ciudad' class='form-control input-element'/>
+                  </div>
+                  <div class='form-group text-center'>
+                    <legend class='user_data sombra'>Elige el servicio solicitado</legend>
+                    <input type='checkbox' name='sonido' id='sonido' />
+                    <label for='terror' class='label-class'>Sonido</label>
+                    <input type='checkbox' name='iluminacion' id='iluminacion' />
+                    <label for='comedia' class='label-class'>ilumincion</label>
+                    <input type='checkbox' name='dj' id='dj' />
+                    <label for='suspenso' class='label-class'>DJ</label>
+                    <input type='checkbox' name='backline' id='backline' />
+                    <label for='accion' class='label-class'>Back-Line</label>
+                  </div>
+
+                  <div class='text-center'>
+                    <button type='submit' class='btn btn-primary btn-save form-control'>Enviar</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+
+            <div class='col-lg-2 text-center '></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- quienes somos -->
+      <div class='container hidden-xs hidden-sm' id="quienes-somos">
+        <div class='row '>
+          <div class='col-sm-2 col-lg-2 text-center'></div>
+          <div class='col-sm-4 col-lg-4 text-center'>
+            <div class='row text-center'>
+              <img class='img-responsive img-thumbnail' src='images/sonorik10.jpg'/>
+            </div>
+          </div>
+          <div class='col-sm-4 col-lg-4 text-justify'>
+            <hr>
+            <hr>
+            <h2 class="text-center">Quienes somos?</h2>
+            <p class="color-parrafo">Somos una organización en función de atender cualquier necesidad,  para que sus eventos tengan la calidad que usted merece, hacemos posibles sus ideas sin importar que tan sencillas parezcan, le damos la importancia que su público espera.</p>
+          </div>
+          <div class='col-sm-2 col-lg-2 text-center'></div>
+        </div>
+      </div>
+
+      <!-- acordeon -->
+      <div class='container-fluid visible-xs visible-sm'>
+        <div id="accordion">
+          <!-- titulo1 -->
+          <div class="card acordeon-espacio">
+            <div class="card-header" id="heading1">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                  <header class='titulo-text text-capitalize text-center'>Quienes somos?<span class="glyphicon glyphicon-chevron-right"></span></header>
+                </button>
+              </h5>
+            </div>
+            <!--<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion"> para que se muestre abierta-->
+            <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
+              <div class="card-body">
+                <div class='row text-center'>
+                  <img class='img-responsive img-thumbnail imagen-margenes' src='images/sonorik10.jpg'/>
+                  <p class="parrafo-margenes">Somos una organización en función de atender cualquier necesidad,  para que sus eventos tengan la calidad que usted merece, hacemos posibles sus ideas sin importar que tan sencillas parezcan, le damos la importancia que su público espera.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- titulo2 -->
+          <div class="card acordeon-espacio">
+            <div class="card-header" id="heading2">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  <header class='titulo-text text-capitalize text-center'>Sonido en vivo<span class="glyphicon glyphicon-chevron-right"></span></header>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+              <div class="card-body">
+                <div class='row text-center'>
+                  <img class='img-responsive img-thumbnail imagen-margenes' src='images/SONIDO_EN_VIVO.jpg'/>
+                  <p class="parrafo-margenes">Proporcionamos sonido conforme a requerimientos técnicos y/o necesidad de cada evento</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- titulo3 -->
+          <div class="card acordeon-espacio">
+            <div class="card-header" id="heading3">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  <header class='titulo-text text-capitalize text-center'>Iluminación<span class="glyphicon glyphicon-chevron-right"></span></header>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+              <div class="card-body">
+                <div class='row text-center'>
+                  <img class='img-responsive img-thumbnail imagen-margenes' src='images/ILUMINACION.jpg'/>
+                  <p class="parrafo-margenes">Creamos espacios de iluminación de acuacuerdo a la situación y preferencias.</p>
+                </div>
+            </div>
+          </div>
+          </div>
+          <!-- titulo4 -->
+          <div class="card acordeon-espacio">
+            <div class="card-header" id="heading4">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  <header class='titulo-text text-capitalize text-center'>DJ<span class="glyphicon glyphicon-chevron-right"></span></header>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+              <div class="card-body">
+                <div class='row text-center'>
+                  <img class='img-responsive img-thumbnail imagen-margenes' src='images/DJ.jpg'/>
+                  <p class="parrafo-margenes">Contamos con Dj's con la mejor energía para hacer de cada evento el mejor y un momento digno de recordar.</p>
+                </div>
+            </div>
+          </div>
+          </div>
+          <!-- titulo5 -->
+          <div class="card acordeon-espacio">
+            <div class="card-header" id="heading5">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  <header class='titulo-text text-capitalize text-center'>Back Line<span class="glyphicon glyphicon-chevron-right"></span></header>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+              <div class="card-body">
+                <div class='row text-center'>
+                  <img class='img-responsive img-thumbnail imagen-margenes' src='images/BACKLINE.jpg'/>
+                  <p class="parrafo-margenes">Atendemos requerimientos técnicos de musicos y artistas con la mejores marcas y configuraciones.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- nuestros servicios -->
+      <div class='row hidden-xs hidden-sm'>
+        <div class='col-lg-12 left-column  titulo-cartelera'>
+          <header class='titulo-text text-capitalize text-center'>Nuestros Servicios</header>
+        </div>
+      </div>
+      <div class='row row-centered hidden-xs hidden-sm'>
+          <!-- Sonido en vivo -->
+          <div class='col-xs-12 col-sm-6 col-md-3 text-center'>
+            <div class=row>
+              <div class="thumbnail color-thumbnail">
+                <img class='img-responsive ' src='images/SONIDO_EN_VIVO.jpg'/>
+                <div class="caption">
+                  <h3>Sonido en vivo</h3>
+                  <p>Proporcionamos sonido conforme a requerimeintos técnicos y/o necesidad de cada evento.</p>
+                  <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Iluminacion -->
+          <div class='col-xs-12 col-sm-6 col-md-3 text-center'>
+            <div class=row>
+              <div class="thumbnail color-thumbnail">
+                <img class='img-responsive ' src='images/ILUMINACION.jpg'/>
+                <div class="caption">
+                  <h3>Iluminación</h3>
+                  <p>Creamos espacios de iluminción de acuerdo a la situación y preferencias.</p>
+                  <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- DJ -->
+          <div class='col-xs-12 col-sm-6 col-md-3 text-center'>
+            <div class=row>
+              <div class="thumbnail color-thumbnail">
+                <img class='img-responsive ' src='images/DJ.jpg'/>
+                <div class="caption">
+                  <h3>DJ</h3>
+                  <p>Contamos con Dj's con la mejor energía para hacer de cada evento el mejor y un momento digno de recordar.</p>
+                  <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Back Line -->
+          <div class='col-xs-12 col-sm-6 col-md-3 text-center'>
+            <div class=row>
+              <div class="thumbnail color-thumbnail">
+                <img class='img-responsive ' src='images/BACKLINE.jpg'/>
+                <div class="caption">
+                  <h3>Back Line</h3>
+                  <p>Atendemos requerimientos técnicos de musicos y artistas con la mejores marcas y configuraciones.</p>
+                  <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+
+    <footer>
+      <div class="container-fluid cinema-footer">
+        <div class='row'>
+
+          <div class='col-lg-12 text-center'>
+            <h4>Dirección: Trv 119 A # 77-9 Bogota</h4>
+            <h4>Correo: kilder@sonorik.com</h4>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-lg-12 text-center'>
+          <p>Página creada por <a href="http:\\www.clicksoft.com.co">www.clicksoft.com.co</a>. Todos los derechos de Autor</p>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+
+</html>
