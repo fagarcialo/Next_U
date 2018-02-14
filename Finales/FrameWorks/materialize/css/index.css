@@ -1,0 +1,64 @@
+.propiedades-body {
+  background: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;/*efecto de imagen de atras del jumbotrom*/
+  width: 100%;
+  height: 100%;
+}
+
+.barra-superior{
+  box-shadow: none;
+}
+
+div {
+  /*border: 1px dashed red;*/
+  /*padding: 10px;*/
+
+}
+
+p{
+  padding: 10px;
+}
+
+.logo{
+  width: 300px;
+  margin-top: 0.5rem;
+  float: left;
+}
+
+.alto-imagen1{
+  height: 840px;
+}
+
+.alto-imagen2{
+  height: 500px;
+}
+
+.alto-imagen3{
+  height: 300px;
+}
+
+.responsive-img{
+  width: 100%;
+}
+
+.responsive-img2{
+  height: 600px;
+}
+
+.sombra {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.fondo1 {
+  background: gray;
+  /*padding: 10px;*/
+  color: #FFFFFF;
+}
+
+.fondo-fotos {
+  background: white;
+}
