@@ -1,0 +1,171 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.titulo{
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+}
+
+.alto-principal{
+  height: 880px;
+}
+
+.alto-servicios{
+  height: 600px;
+}
+
+.tamano-logo{
+  width: 20%;
+}
+
+.nuestros-productos{
+  background:
+}
+
+.imagen-rotadora:hover {
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
+
+.crecer:hover
+{
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.6);
+}
+
+.bailar:hover
+{
+-webkit-animation: swing 1s ease;
+animation: swing 1s ease;
+-webkit-animation-iteration-count: 1;
+animation-iteration-count: 1;
+}
+
+/*div {
+  border: 1px dashed red;
+}*/
+
+.sombra {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+
+/*.logo-img {
+    width: 100px;
+} */
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .altura-paralax{
+    height: 600px;
+  }
+
+  .altura-paralax2{
+    height: 10px;
+  }
+
+  .imagen-paralax{
+    width: 10%;
+  }
+
+  .titulo{
+    font-size: 25px;
+  }
+
+  .subtitulo{
+    font-size: 15px;
+  }
+
+  .logo-img{
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .alto-principal{
+    height: 600px;
+  }
+
+  .alto-servicios{
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .imagen-paralax{
+    width: 50%;
+  }
+
+
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
