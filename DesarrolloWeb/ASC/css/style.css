@@ -15,9 +15,14 @@ h1 {
   font-size: 50px;
 }
 
+h3 {
+  font-size: 30px;
+}
+
 .titulo{
-  font-family: 'Lobster', cursive;
-  font-size: 80px;
+  /*font-family: 'Lobster', cursive;*/
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 110px;
 }
 
 .alto-principal{
@@ -25,7 +30,7 @@ h1 {
 }
 
 .alto-servicios{
-  height: 600px;
+  height: 400px;
 }
 
 .tamano-logo{
@@ -88,6 +93,19 @@ p {
     width: 100%;
 }
 
+.carousel {
+ height: 900px;
+}
+
+.carousel .carousel-item {
+  display: none;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /*.logo-img {
     width: 100px;
 } */
@@ -140,8 +158,22 @@ p {
   }
 
   .alto-servicios{
-    height: 400px;
+    height: 350px;
   }
+
+  .carousel {
+   height: 400px;
+  }
+
+  .carousel .carousel-item {
+    display: none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
 }
 
 @media (max-width: 992px) {

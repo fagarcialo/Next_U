@@ -34,7 +34,7 @@ document.getElementById("mivideo").onmouseenter=activar_video;
 */
 
 var vid = document.getElementById("mivideo");
-function enableAutoplay() { 
+function enableAutoplay() {
     vid.autoplay = true;
     vid.load();
 }
