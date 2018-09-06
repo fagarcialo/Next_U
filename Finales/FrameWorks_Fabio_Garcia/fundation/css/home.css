@@ -1,0 +1,36 @@
+.propiedades-body {
+  background: url(../img/gastronomia.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;/*efecto de imagen de atras del jumbotrom*/
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.logo-img{
+  width: 30%;
+}
+
+/*div {
+  border: 1px dashed red;
+}*/
+
+.imagen-entrada{
+  width: 100%;
+}
+
+.tamano-bloque{
+  height: 100px;
+}
+
+.sombra {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+.color-letras{
+  color: white;
+}
